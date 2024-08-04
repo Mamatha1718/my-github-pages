@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreelanceHub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        .header img {
+            width: 100px;
+            /* Adjust the size as needed */
+        }
+        
+        .nav {
+            background-color: #444;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        .nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .half {
+            flex: 1;
+            background-color: #a5adb0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            cursor: pointer;
+        }
+        
+        .half h2 {
+            margin-top: 0;
+        }
+        
+        .details {
+            display: none;
+            margin-top: 1rem;
+            text-align: left;
+        }
+        
+        .details ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .details ul li {
+            background-color: #f9f9f9;
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="C:\Users\mamat\OneDrive\Pictures\Screenshots\Screenshot 2024-07-28 235722.png" alt="BS Solutions Company Logo" style="border-radius: 50%; margin-left: -1400px;">
+        <h1 style="margin-top: -68px;">Business Solutions</h1>
+    </div>
+    <div class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#features">Features</a>
+        <a href="#why-choose-us">Why Choose Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#Signin" style="background-color: #6a838e; ">Signin</a>
+        <a href="Login" style="background-color: #6a838e; ">Login</a>
+    </div>
+    <div class="container" id="home">
+        <div class="half" onclick="toggleDetails('freelancingDetails')">
+            <h2>FreelanceHub</h2>
+            <p>Find and offer freelance services across various categories. Services Resource. Click to explore more.</p>
+            <div id="freelancingDetails" class="details">
+                <h3>Freelancing Categories</h3>
+                <ul>
+                    <li>Education</li>
+                    <li>Companies</li>
+                    <li>Startups</li>
+                    <li>Mentorship</li>
+                    <li>Designing</li>
+                    <li>Techies & Non Techies</li>
+                </ul>
+            </div>
+        </div>
+        <div class="half" onclick="toggleDetails('ecommerceDetails')">
+            <h2>Fashion World</h2>
+            <p>Explore a wide range of products.Click to Look Trendy and Explore more.</p>
+            <div id="ecommerceDetails" class="details">
+                <h3>E-Commerce Categories</h3>
+                <ul>
+                    <li>Women</li>
+                    <li>Men</li>
+                    <li>Jewelry</li>
+                    <li>Electronics</li>
+                    <li>Home & Garden</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="about">
+        <div class="half">
+            <h2>About Us</h2>
+            <p>We are a platform connecting freelancers and clients for various projects. Our mission is to simplify the process of finding the right talent for your needs.</p>
+        </div>
+    </div>
+    <div class="container" id="features">
+        <div class="half">
+            <h2>Features</h2>
+            <p>Our platform offers a variety of features including secure payments, project management tools, and a wide range of categories to choose from.</p>
+        </div>
+    </div>
+    <div class="container" id="why-choose-us">
+        <div class="half">
+            <h2>Why Choose Us</h2>
+            <p>We offer a trusted platform with verified freelancers, easy-to-use tools, and excellent customer support. Our goal is to make freelancing hassle-free for everyone.</p>
+        </div>
+    </div>
+    <div class="container" id="contact">
+        <div class="half">
+            <h2>Contact</h2>
+            <p>If you have any questions or need assistance, please contact us at support@freelancehub.com or call us at (123) 456-7890.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 FreelanceHub. All Rights Reserved.</p>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            const details = document.getElementById(id);
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
